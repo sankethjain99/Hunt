@@ -1,4 +1,3 @@
-
 import app from "firebase/app";
 import "firebase/auth";
 import "firebase/firestore";
@@ -19,7 +18,7 @@ class Firebase {
       password
     );
     return newUser.user.updateProfile({
-      displayName: name
+      displayName: name,
     });
   }
 
